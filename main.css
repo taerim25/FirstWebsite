@@ -1,11 +1,29 @@
 body{
-    background:brown;
+    background:#546;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align:center;
+    
     font-size: 20px;
 }
+body header {
+    background: #876;
+}
+body header h1{
+    text-align:center;
+}
+header ui {
+    margin: 0;
+    display:inline;
+    
+    list-style-type:none;
+}
+header ui li {
+    padding: 8px 15px;
+    display:inline-block;
+    color:white;
+    background-color: #674;
+}
 .button{
-    background-color:green;
+    background-color:#674;
     border:none;
     color:white;
     padding: 15px 32px;
@@ -13,4 +31,10 @@ body{
     display: inline-block;
     font-size: 32px;
     cursor: pointer;
+}
+body desc{
+    text-align:center;
+    background:#876;
+    padding: 0 0 0 10px;
+    display: inline
 }
