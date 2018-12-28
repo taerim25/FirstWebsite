@@ -1,11 +1,10 @@
 body{
-    background:#546;
+    background:#white;
     font-family: Georgia, 'Times New Roman', Times, serif;
     
     font-size: 20px;
 }
 body header {
-    background: #876;
 }
 body header h1{
     text-align:center;
@@ -34,7 +33,6 @@ header ui li {
 }
 body desc{
     text-align:center;
-    background:#876;
     padding: 0 0 0 10px;
     display: inline
 }
