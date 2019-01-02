@@ -35,4 +35,8 @@ var createCSV = function () {
       
       download(csvContent, 'dowload.csv', 'text/csv;encoding:utf-8');
 };
-sub.addEventListener("click",createCSV);
+var redirect = function () {
+  window.location.replace("calendar.html")
+}
+sub.addEventListener("click",redirect);
+

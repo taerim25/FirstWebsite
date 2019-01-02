@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+<head>
+    <link rel='stylesheet' href='fullcalendar/fullcalendar.css' />
+    <script type='text/javascript' src='fullcalendar/lib/jquery.min.js'></script>
+    <script src='fullcalendar/lib/moment.min.js'></script>
+    <script type='text/javascript' src='fullcalendar/fullcalendar.min.js'></script>
+    <script>
+         
+    </script>
+    <script>
+            $(function() {
+               
+               // page is now ready, initialize the calendar...
+               
+               var calendar =$('#calendar').fullCalendar({
+                // put your options and callbacks here
+                header: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'month,agendaWeek,agendaDay'
+                }
+               })
+               
+           });  
+       </script>
+</head>
+<html>
+    <title> CTF Mcgill Final Exam Viewer - calendar page </title>
+    
+</html>
+<body>
+    <h1>
+        Welcome [user]!
+    </h1>
+        
+    <link href = "styleCal.css" rel ="stylesheet">
+    <div id='calendar'></div>
+</body>
