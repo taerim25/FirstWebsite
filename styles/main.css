@@ -53,3 +53,6 @@ body desc{
     cursor: inherit;
     display: block;
 }
+#Home :active {
+    color:black;
+}

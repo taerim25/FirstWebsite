@@ -1,2 +1,54 @@
 <!doctype html>
-Hello!
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link href = "styles/main.css" rel = "stylesheet" type = "text/css" />
+    </head>
+    <header>
+            <h1>
+                    McGill Exam Viewer
+                   </h1>
+            <nav class="navbar navbar-expand-lg navbar-inverse bg-dark">
+                    <a class="navbar-brand" href="#">FirstWebsite</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active" id = "Home">
+                          <a class="nav-link" id = "Home" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active" id = "Contact" >
+                          <a class="nav-link" id="Contact" href="#">Contact</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+    </header>
+    <body>
+        <button class ="btn btn-default contactLink" id = "Git" link = "https://github.com/taerim25"/>
+            <img src = "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width = 200 > GitHub 
+        </button>
+        <button class = "btn btn-default contactLink" id = "LinkedIn" link = "https://www.linkedin.com/in/geoffrey-taerim-kim-b8437b14a" >
+            <img src = "https://image.flaticon.com/icons/svg/174/174857.svg" width= 200> LinkedIn
+        </button>
+        <script src = "scripts/jquery-3.3.1.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <script src = "scripts/Contacts.js"></script>
+        <script>
+            $(function(){
+             $(".contactLink").on('click',function(){
+                 var link = $(this).attr('link');
+              window.location.replace(link);
+             })
+             $("#Home").on('click',function(){
+                 window.location.replace('index.html');
+             })
+           }
+          )
+        </script>
+    </body>
+</html>
